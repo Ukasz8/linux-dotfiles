@@ -1,5 +1,5 @@
 #!/bin/bash
-sudo pacman -S tldr steam openvpn neovim git ufw flatpak p7zip-gui htop zsh thunar
+sudo pacman -S tldr steam openvpn neovim ufw flatpak htop zsh thunar
 
 yay -S  blackbox-terminal librewolf-bin fastfetch keepassxc
 
@@ -13,6 +13,6 @@ sudo ufw enable
 sudo systemctl enable fail2ban
 sudo systemctl start fail2ban
 
-chsh -s /usr/bin/zsh
+#chsh -s /usr/bin/zsh
 
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
