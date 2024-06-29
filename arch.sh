@@ -1,8 +1,5 @@
 #!/bin/bash
-sudo pacman -S tldr steam openvpn neovim ufw flatpak htop zsh thunar
-
-echo TEST
-read tt
+sudo pacman -S tldr steam openvpn neovim ufw flatpak htop zsh thunar p7zip
 
 yay -S  blackbox-terminal librewolf-bin fastfetch keepassxc
 
