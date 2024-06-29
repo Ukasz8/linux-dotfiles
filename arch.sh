@@ -30,3 +30,7 @@ git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:
 mv .p10k.zsh ~
 
 mv .zshrc ~
+
+#BLACKBOX
+
+mv ./MesloLGS_NF_Regular.ttf ~/.fonts/
