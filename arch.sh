@@ -1,6 +1,9 @@
 #!/bin/bash
 sudo pacman -S tldr steam openvpn neovim ufw flatpak htop zsh thunar
 
+echo TEST
+read tt
+
 yay -S  blackbox-terminal librewolf-bin fastfetch keepassxc
 
 sudo ufw limit 22/tcp
