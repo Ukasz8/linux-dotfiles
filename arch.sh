@@ -22,7 +22,7 @@ sudo systemctl start fail2ban
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 
 #THEME
-git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k
+echo 'N' | git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k
 
 #PLUGINS
 git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
@@ -37,6 +37,9 @@ rm -rf ~/.zshrc
 
 mv .zshrc ~
 
-#BLACKBOX
+chsh -s /bin/zsh
 
-mv ./MesloLGS_NF_Regular.ttf ~/.fonts
+#BLACKBOX
+mkdir ~/.fonts
+
+mv ./MesloLGS_NF_Regular.ttf ~/.fonts/
