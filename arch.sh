@@ -33,4 +33,4 @@ mv .zshrc ~
 
 #BLACKBOX
 
-mv ./MesloLGS_NF_Regular.ttf ~/.fonts/
+mv ./MesloLGS_NF_Regular.ttf ~/.fonts
