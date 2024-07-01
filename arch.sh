@@ -36,7 +36,7 @@ rm -rf ~/.zshrc
 
 mv .zshrc ~
 
-echo 'exec zsh' > ~/.bashrc
+echo 'exec zsh' >> ~/.bashrc
 
 #BLACKBOX
 mkdir ~/.fonts
