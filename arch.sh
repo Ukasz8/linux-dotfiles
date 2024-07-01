@@ -1,6 +1,4 @@
 #!/bin/bash
-#UPDATE
-yay 
 #PACZKI
 sudo pacman -S tldr steam openvpn neovim ufw flatpak htop zsh thunar p7zip fail2ban
 
@@ -38,7 +36,7 @@ rm -rf ~/.zshrc
 
 mv .zshrc ~
 
-chsh -s /bin/zsh
+echo 'exec zsh' > ~/.bashrc
 
 #BLACKBOX
 mkdir ~/.fonts
