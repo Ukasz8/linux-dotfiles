@@ -38,7 +38,10 @@ mv .zshrc ~
 
 echo 'exec zsh' >> ~/.bashrc
 
-#BLACKBOX
 mkdir ~/.fonts
 
 mv ./MesloLGS_NF_Regular.ttf ~/.fonts/
+
+rm -rf ~/.config/kglobalshortcutsrc
+
+mv kglobalshortcutsrc ~/.config
