@@ -1,6 +1,6 @@
 #!/bin/bash
 #PACZKI
-sudo pacman -S tldr steam openvpn neovim ufw flatpak htop zsh thunar p7zip fail2ban
+sudo pacman -S tldr steam openvpn neovim ufw flatpak htop zsh thunar p7zip fail2ban clamav
 
 yay -S  blackbox-terminal librewolf-bin fastfetch keepassxc
 
@@ -45,3 +45,11 @@ mv ./MesloLGS_NF_Regular.ttf ~/.fonts/
 rm -rf ~/.config/kglobalshortcutsrc
 
 mv kglobalshortcutsrc ~/.config
+
+#VPN
+
+mv vpn.conf /etc/openvpn/server/
+
+sudo systemctl enable openvpn-server@vpn
+
+sudo systemcl start openvpn-server@vpn
