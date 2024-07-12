@@ -2,7 +2,7 @@
 #PACZKI
 sudo pacman -S tldr steam openvpn neovim ufw flatpak htop zsh thunar p7zip fail2ban clamav gdb
 
-yay -S  blackbox-terminal librewolf-bin fastfetch keepassxc
+yay -S  blackbox-terminal librewolf-bin fastfetch keepassxc visual-studio-code-bin moosync
 
 #FIREWALL
  
