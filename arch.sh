@@ -48,7 +48,7 @@ mv kglobalshortcutsrc ~/.config
 
 #VPN
 
-mv vpn.conf /etc/openvpn/server/
+sudo mv vpn.conf /etc/openvpn/server/
 
 sudo systemctl enable openvpn-server@vpn
 
