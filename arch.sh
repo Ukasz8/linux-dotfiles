@@ -13,6 +13,7 @@ sudo ufw default deny incoming
 sudo ufw default allow outgoing
 sudo ufw enable
 
+sudo mv ./jail.local /etc/fail2ban/
 sudo systemctl enable fail2ban
 sudo systemctl start fail2ban
 
